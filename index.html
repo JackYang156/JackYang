@@ -2,9 +2,23 @@
 <html>
 <head>
   <title>My First Webpage</title>
+  <style>
+    body, html {
+      height: 100%; /* Ensures the body and html elements cover the full viewport height */
+      margin: 0; /* Removes any default body margins */
+      font-family: sans-serif;
+      color: white; /* Makes text more visible on the dark background */
+      text-align: center; /* Centers the content */
+      
+      /* Background image properties */
+      background-image: url("SAP.png"); /* Specifies the image file */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents the image from tiling */
+      background-size: cover; /* Resizes the image to cover the entire container */
+    }
+  </style>
 </head>
 <body>
-  <img src="SAP.png" alt="SAP" style="width:100px;height:100px;">
   <h1>FirstName LastName</h1>
   <p>I'm learning to code on Codecademy! My goals include:</p>
   <ul>
@@ -15,6 +29,5 @@
   <p>This is one of my favorite websites: <a href="https://www.google.com/" target="_blank">Google</a></p>
 </body>
 </html>
-
 
 
