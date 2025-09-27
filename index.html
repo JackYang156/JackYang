@@ -1,33 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <title>My First Webpage</title>
-  <style>
-    body, html {
-      height: 100%; /* Ensures the body and html elements cover the full viewport height */
-      margin: 0; /* Removes any default body margins */
-      font-family: sans-serif;
-      color: white; /* Makes text more visible on the dark background */
-      text-align: center; /* Centers the content */
-      
-      /* Background image properties */
-      background-image: url("SAP.png"); /* Specifies the image file */
-      background-position: center; /* Centers the image */
-      background-repeat: no-repeat; /* Prevents the image from tiling */
-      background-size: cover; /* Resizes the image to cover the entire container */
-    }
-  </style>
+    <title>jack yang</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+            background-image: url("sap.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden; /* Prevents scrolling if content exceeds the viewport */
+        }
+
+        #quadrant-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            height: 100vh; /* Make the grid cover the full viewport height */
+        }
+
+        .quadrant {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white; /* A thin white border to create the cross effect */
+            box-sizing: border-box; /* Ensures the border is included in the element's total width and height */
+        }
+
+        /* Specific placement using grid-column and grid-row */
+        #quadrant-1 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        #quadrant-2 {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #quadrant-3 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #quadrant-4 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        #quadrant-4 a {
+            /* Styles for the link inside the fourth quadrant */
+            color: white;
+            text-decoration: none; /* Removes the underline from the link */
+            font-size: 2em; /* Makes the text larger to match the heading size */
+        }
+    </style>
 </head>
 <body>
-  <h1>FirstName LastName</h1>
-  <p>I'm learning to code on Codecademy! My goals include:</p>
-  <ul>
-    <li>Learn to code</li>
-    <li>Start a company</li>
-    <li>Help the world</li>
-  </ul>
-  <p>This is one of my favorite websites: <a href="https://www.google.com/" target="_blank">Google</a></p>
+    <div id="quadrant-container">
+        <div id="quadrant-1" class="quadrant">
+            <h1>learn to code</h1>
+        </div>
+        <div id="quadrant-2" class="quadrant">
+            <h1>start a company</h1>
+        </div>
+        <div id="quadrant-3" class="quadrant">
+            <h1>help the world</h1>
+        </div>
+        <div id="quadrant-4" class="quadrant">
+            <a href="https://www.google.com/">Google</a>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+
 
 
